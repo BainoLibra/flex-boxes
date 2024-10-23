@@ -27,12 +27,22 @@
         display: inline;
         flex-direction: row;
     }
-    .cards{
+    .card-one{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    .cards .one{
+    .card-two{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card-three{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .one{
         background-color: white;
         border: none;
         border-radius: 5px;
@@ -42,7 +52,7 @@
         width: 70vh;
         height: 30vh;
     }
-    .cards .two{
+    .two{
         background-color: white;
         border: none;
         border-radius: 5px;
@@ -52,7 +62,7 @@
         width: 70vh;
         height: 30vh;
     }
-    .cards .three{
+    .three{
         background-color: white;
         border: none;
         border-radius: 5px;
@@ -62,7 +72,7 @@
         width: 70vh;
         height: 30vh;
     }
-    .cards .four{
+    .four{
         background-color: white;
         border: none;
         border-radius: 5px;
@@ -72,7 +82,7 @@
         width: 70vh;
         height: 30vh;
     }
-    .cards .five{
+    .five{
         background-color: white;
         border: none;
         border-radius: 5px;
@@ -82,7 +92,7 @@
         width: 70vh;
         height: 30vh;
     }
-    .cards .six{
+    .six{
         background-color: white;
         border: none;
         border-radius: 5px;
@@ -92,7 +102,7 @@
         width: 70vh;
         height: 30vh;
     }
-    .cards .seven{
+    .seven{
         background-color: white;
         border: none;
         border-radius: 5px;
@@ -101,6 +111,30 @@
         padding: 1px 2px 2px;
         width: 70vh;
         height: 30vh;
+    }
+    .one a button{
+        background-color: #08c9e6;
+        border: none;
+        border-radius: 5px;
+        padding: auto;
+    }
+    .two a button{
+        background-color: #0b6fff;
+    }
+    .three a button{
+        background-color: #188655;
+    }
+    .four a button{
+        background-color: #fcc00d;
+    }
+    .five a button{
+        background-color: #0dc7f3;
+    }
+    .six a button{
+        background-color: #6c747c;
+    }
+    .seven a button{
+        background-color: #d83545;
     }
 </style>
 <body>
@@ -121,43 +155,49 @@
             <p>Manage your finances securely using the services below.</p>
         </div>
         <div class="cards">
-            <div class="one">
-                <h4>Your Profile</h4>
-                <p>Name: John Doe</p>
-                <p>Email: jonhdoe@example.com</p>
-                <p>Phone: +256 123 456 789 </p>
-                <a href="#"> <button>View Profile</button></a>
+            <div class="card-one">
+                <div class="one">
+                    <h4>Your Profile</h4>
+                    <p>Name: John Doe</p>
+                    <p>Email: jonhdoe@example.com</p>
+                    <p>Phone: +256 123 456 789 </p>
+                    <a href="#"><button>View Profile</button></a>
+                </div>
+                <div class="two">
+                    <h4>Check Balance</h4>
+                    <p>View your current account balance.</p>
+                    <a href="#"> <button>Check Balance</button></a>
+                </div>
+                <div class="three">
+                    <h4>Deposit funds</h4>
+                    <p>Add money to your account.</p>
+                    <a href="#"> <button>Deposit</button></a>
+                </div>
             </div>
-            <div class="two">
-                <h4>Check Balance</h4>
-                <p>View your current account balance.</p>
-                <a href="#"> <button>Check Balance</button></a>
+            <div class="card-two">
+                <div class="four">
+                    <h4>Send Money</h4>
+                    <p>Transfer funds to another account.</p>
+                    <a href="#"> <button>Send Money</button></a>
+                </div>
+                <div class="five">
+                    <h4>Buy Airtime</h4>
+                    <p>Purchase airtime for your mobile phone.</p>
+                    <a href="#"> <button>Buy Airtime</button></a>
+                </div>
+                <div class="six">
+                    <h4>Transaction History</h4>
+                    <p>View your past transactions.</p>
+                    <a href="#"> <button>View History</button></a>
+                </div>
             </div>
-            <div class="three">
-                <h4>Deposit funds</h4>
-                <p>Add money to your account.</p>
-                <a href="#"> <button>Deposit</button></a>
-            </div>
-            <div class="four">
-                <h4>Send Money</h4>
-                <p>Transfer funds to another account.</p>
-                <a href="#"> <button>Send Money</button></a>
-            </div>
-            <div class="five">
-                <h4>Buy Airtime</h4>
-                <p>Purchase airtime for your mobile phone.</p>
-                <a href="#"> <button>Buy Airtime</button></a>
-            </div>
-            <div class="six">
-                <h4>Transaction History</h4>
-                <p>View your past transactions.</p>
-                <a href="#"> <button>View History</button></a>
-            </div>
-            <div class="seven">
-                <h4>Reset PIN</h4>
-                <p>Reset youe account PIN.</p>
-                <a href="#"> <button>Rest PIN</button></a>
-            </div>
+            <div class="card-three">
+                <div class="seven">
+                    <h4>Reset PIN</h4>
+                    <p>Reset youe account PIN.</p>
+                    <a href="#"> <button>Rest PIN</button></a>
+                </div>
+            </div> 
         </div>
     </section>
 </body>
