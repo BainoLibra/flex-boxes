@@ -31,10 +31,7 @@
     li {
         justify-content: space-between;
         list-style: none;
-    }
-    li a{
-        display: inline;
-        flex-direction: row;
+        display: flex;
     }
     .profile{
         text-align: left;
@@ -226,8 +223,12 @@
             </div>
             <nav class="profile">
                 <li>
-                    <a href="#">Dashboard</a>
-                    <a href="#">Logout</a>
+                    <div class="pro-1">
+                        <a href="#">Dashboard</a>
+                    </div>
+                    <div class="pro-2">
+                        <a href="#">Logout</a>
+                    </div>
                 </li>
             </nav>
         </div>
